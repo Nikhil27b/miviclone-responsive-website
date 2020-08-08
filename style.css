@@ -261,18 +261,12 @@ footer {
 
     .footer-box {
         display: block;
-        height: 500px;
+        height: 650px;
 
 
     }
 
-    .conracr-box {
-        background-color: var(--clr-primary-1);
-        position: absolute;
-        height: 200px;
-        width: 450px;
-
-    }
+  
 
     footer {
         flex-direction: column-reverse;
@@ -305,7 +299,7 @@ footer {
     .conracr-box {
         position: relative;
         height: 200px;
-        width: 450px;
+        width: 400px;
         padding: 10px 20px;
     }
 
