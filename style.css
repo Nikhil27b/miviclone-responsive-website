@@ -197,28 +197,25 @@ footer {
     justify-content: flex-start;
 }
 
-#audio .row .card,
-#smart .row .card,
-#cable .row .card {
+#audio .row .card img,
+#smart .row .card img,
+#cable .row .card img {
     border-radius: 20px;
-    transition: ease-in-out 0.3s;
     margin: 20px 0;
-
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-#adapter .row .card {
-    border-radius: 20px;
     transition: ease-in-out 0.3s;
-    margin: 20px 5px;
-
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-#audio .row .card:hover,
-#adapter .row .card:hover,
-#smart .row .card:hover,
-#cable .row .card:hover {
+#adapter .row .card img {
+    border-radius: 20px;
+    margin: 20px 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#audio .row .card img:hover,
+#adapter .row .card img:hover,
+#smart .row .card img:hover,
+#cable .row .card img:hover {
     transform: scale(1.05);
 }
 
@@ -261,12 +258,12 @@ footer {
 
     .footer-box {
         display: block;
-        height:700px;
+        height: 650px;
 
 
     }
 
-  
+
 
     footer {
         flex-direction: column-reverse;
@@ -300,7 +297,7 @@ footer {
         position: relative;
         height: 200px;
         width: 400px;
-        padding: 10px 10px;
+        padding: 10px 20px;
     }
 
 
