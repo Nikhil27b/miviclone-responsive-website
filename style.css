@@ -1,0 +1,314 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: white;
+    --clr-primary-2: black;
+    --clr-primary-3: #b1aba7;
+    /* primary/main color */
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+.navbar .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 30px;
+}
+
+.footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--clr-primary-2);
+    height: 300px;
+    position: relative;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.conracr-box {
+    background-color: var(--clr-primary-1);
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    height: 200px;
+    width: 500px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.navbar .nav-bar .toggle {
+    display: none;
+}
+
+.para {
+    color: var(--clr-primary-3);
+
+}
+
+.float-right,
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.float-right span {
+    color: var(--clr-primary-3);
+    font-size: 10px;
+}
+
+.email,
+.call {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socaillogofooter .fa {
+    padding: 0 10px;
+    font-size: 19px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: var(--clr-primary-3);
+    padding: 10px 20px;
+    background-color: var(--clr-primary-2);
+}
+
+.mail-text h6,
+.call-text h6 {
+    margin: 0 10px;
+    color: var(--clr-primary-3);
+}
+
+.mail-text a,
+.call-text a {
+    color: var(--clr-primary-2);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.shop,
+.company {
+    margin-right: 80px;
+}
+
+.shop a,
+.company a {
+    color: var(--clr-primary-1);
+    margin: 30px 0;
+    text-decoration: none;
+}
+
+.shop li,
+.company li {
+    margin: 10px 0;
+}
+
+.logo img {
+    width: 60px;
+    height: 40px;
+}
+
+.navbar .nav-bar .main-nav-list ul {
+    display: flex;
+    list-style: none;
+    margin-right: 350px;
+    z-index: 2;
+}
+
+.navbar .nav-bar .main-nav-list li {
+    padding: 0 20px;
+}
+
+.navbar .nav-bar .main-nav-list a {
+    text-decoration: none;
+    color: var(--clr-primary-1);
+}
+
+.navbar .nav-bar .nav-icons {
+    color: var(--clr-primary-1);
+}
+
+.navbar {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 515px;
+    background-image: url("https://res.cloudinary.com/mivi/image/upload/c_scale,dpr_1.5,f_auto,q_auto:eco,w_1400/v1594922360/srt4hkmt0ofx0cfx96dk.jpg");
+}
+
+#audio {
+    margin-top: 50px;
+}
+
+#audio .row,
+#smart .row {
+    display: grid;
+    padding: 20px 0px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+#cable .row {
+    display: grid;
+    padding: 20px 0px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+}
+
+#adapter .row {
+    display: grid;
+    padding: 20px 10px;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+}
+
+#audio .row .card,
+#smart .row .card,
+#cable .row .card {
+    border-radius: 20px;
+    transition: ease-in-out 0.3s;
+    margin: 20px 0;
+
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#adapter .row .card {
+    border-radius: 20px;
+    transition: ease-in-out 0.3s;
+    margin: 20px 5px;
+
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#audio .row .card:hover,
+#adapter .row .card:hover,
+#smart .row .card:hover,
+#cable .row .card:hover {
+    transform: scale(1.05);
+}
+
+@media(max-width:580px) {
+
+    #audio .row,
+    #smart .row {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    #cable .row {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #cable .row img {
+        width: 200px;
+    }
+
+    #adapter .row {
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+
+    .navbar {
+        width: 100%;
+        background-size: cover;
+
+        height: 300px;
+    }
+
+    .navbar .nav-bar .main-nav-list ul {
+        display: none;
+        margin-right: 0px;
+
+
+    }
+
+    .footer-box {
+        display: block;
+        height: 500px;
+
+
+    }
+
+    .conracr-box {
+        background-color: var(--clr-primary-1);
+        position: absolute;
+        height: 200px;
+        width: 450px;
+
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        padding: 0 20px;
+
+    }
+
+    .navbar .nav-bar {
+        background-color: var(--clr-primary-2);
+        padding: 2px 30px;
+        justify-content: space-between;
+
+
+    }
+
+    .navbar .nav-bar .toggle {
+        display: block;
+        color: white;
+
+    }
+
+    .float-right {
+        padding: 20px;
+    }
+
+    .nav-icons :last-child {
+        display: none;
+    }
+
+    .conracr-box {
+        position: relative;
+        height: 200px;
+        width: 450px;
+        padding: 10px 20px;
+    }
+
+
+
+}
